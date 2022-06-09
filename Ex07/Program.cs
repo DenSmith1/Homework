@@ -29,9 +29,8 @@
 
 double ElementsSummary(int M, int N)
 {
-    double Sum = M;
-    if (M >= N) return Sum;
-    else return Sum + ElementsSummary(M + 1, N);
+    if (M >= N) return M;
+    else return M + ElementsSummary(M + 1, N);
 }
 
 Console.Clear();
